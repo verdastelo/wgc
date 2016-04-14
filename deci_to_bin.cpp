@@ -1,3 +1,6 @@
+// Program: Decimal to Binary Converter
+// Author: Четан Ананд
+
 #include <iostream>
 #include <vector>
 
