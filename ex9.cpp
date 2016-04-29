@@ -10,10 +10,14 @@ int main() {
   int age;
   char file_name[20];
 
-  cout << "Enter first name: "; cin >> first_name;
-  cout << "Enter last name: "; cin >> last_name;
-  cout << "Enter age: "; cin >> age;
-  cout << endl; "Enter the file's name: "; cin >> file_name;
+  while (!(cin != -1)) {
+    cout << "Enter first name: "; cin >> first_name;
+    cout << "Enter last name: "; cin >> last_name;
+    cout << "Enter age: "; cin >> age;
+    cout << endl;
+    }
+
+    "Enter the file's name: "; cin >> file_name;
 
   ofstream People (file_name, ios::out);
   People << first_name << endl << last_name << endl << age << endl;
