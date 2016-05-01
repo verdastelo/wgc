@@ -1,0 +1,76 @@
+// buildingBlocks.cpp: Четан Ананд
+// Описание: Эта программа создаёт буквы.
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+void horizontalLine() {
+  for (int i = 0; i < 9; i++) {
+    cout << "*";
+  }
+  cout << endl;
+}
+
+void horizontalHalf() {
+  for (int i = 0; i < 5; i++) {
+    cout << "*";
+  }
+  cout << endl;
+}
+
+void verticalLeft() {
+  for (int i = 0; i < 4; i++) {
+    cout << "*" << endl;
+  }
+}
+
+void verticalRight() {
+  for (int i = 0; i < 4; i++) {
+    cout << setw(8) << setiosflags(ios::right) << "*" << endl;
+  }
+}
+
+void verticalParallel() {
+  for (int i = 0; i < 4; i++) {
+    cout << "*\t*" << endl;
+  }
+}
+
+void rightFalling() {
+  cout << "*" << endl;
+  cout << "**" << endl;
+  cout << "* *" << endl;
+  cout << "*  *" << endl;
+  cout << "*   *" << endl;
+  cout << "*    *" << endl;
+  cout << "*     *" << endl;
+  cout << "*\t*" << endl;
+}
+
+void leftFalling() {
+  cout << setw(8) << setiosflags(ios::right) <<  "*" << endl;
+  cout << setw(8) << setiosflags(ios::right) << "**" << endl;
+  cout << setw(8) << setiosflags(ios::right) << "* *" << endl;
+  cout << setw(8) << setiosflags(ios::right) << "*  *" << endl;
+  cout << setw(8) << setiosflags(ios::right) << "*   *" << endl;
+  cout << setw(8) << setiosflags(ios::right) << "*    *" << endl;
+  cout << setw(8) << setiosflags(ios::right) <<  "*     *" << endl;
+  cout << "*\t*" << endl;
+}
+
+void invertedCone() {
+  cout << "*  *   *" << endl;
+  cout << " * * *  " << endl;
+  cout << "  ***   " << endl;
+}
+
+void cone() {
+  cout << "  ***   " << endl;
+  cout << " * * *  " << endl;
+  cout << "*  *   *" << endl;
+}
+
+void threeDots() {
+  cout <<  "  ***   " << endl;
+}

@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-  cout << "Write your name: ";
+  cout << "Skribu ion: ";
   string name;
   getline (cin, name);
   for (int i = 0; i < name.size(); i++) {
