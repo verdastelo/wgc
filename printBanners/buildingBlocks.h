@@ -82,6 +82,16 @@ void rightFalling() {
   cout << "*\t*" << endl;
 }
 
+void leftFallingAlone() {
+  cout << setw(9) << setiosflags(ios::right) << "*" << endl;
+  cout << setw(9) << setiosflags(ios::right) << "* " << endl;
+  cout << setw(9) << setiosflags(ios::right) << "*  " << endl;
+  cout << setw(9) << setiosflags(ios::right) << "*   " << endl;
+  cout << setw(9) << setiosflags(ios::right) << "*    " << endl;
+  cout << setw(9) << setiosflags(ios::right) << "*     " << endl;
+  cout << setw(9) << setiosflags(ios::right) << "*      " << endl;
+}
+
 void leftFalling() {
   cout << setw(9) << setiosflags(ios::right) << "*" << endl;
   cout << setw(9) << setiosflags(ios::right) << "**" << endl;
