@@ -1,0 +1,38 @@
+// print_banners.cpp: Четан Ананд
+// Descripion: Prints large text banners.
+
+#include <iostream>
+using namespace std;
+
+void invertedU() {
+  for (int i = 0; i < 9; i++) {
+    cout << "a";
+  }
+  cout << endl;
+  for (int i = 0; i < 4; i++) {
+    cout << "a\ta" << endl;
+  }
+}
+
+void square() {
+  for (int i = 0; i < 9; i++) {
+    cout << "b";
+  }
+  cout << endl;
+  for (int i = 0; i < 4; i++) {
+    cout << "b\tb" << endl;
+  }
+  for (int i = 0; i < 9; i++) {
+    cout << "b";
+  }
+  cout << endl;
+}
+ 
+int main() {
+  invertedU();
+  invertedU();
+  cout << endl;
+  invertedU();
+  square();
+  return 0;
+}
