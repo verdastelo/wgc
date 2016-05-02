@@ -1,0 +1,12 @@
+// printBanners.cpp: Четан Ананд
+// орисание: Текст на кириллице.
+
+#include <iostream>
+#include "buildingBlocks.h"
+#include "letters.h"
+using namespace std;
+
+int main() {
+  bukvaA;
+  return 0;
+}
