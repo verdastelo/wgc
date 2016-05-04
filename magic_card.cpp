@@ -1,5 +1,6 @@
 // magic_card.cpp: Четан Ананд
 // Описание: Implements the algorithm described in Google C++ Course. Getting Started. Exercises and Projects № 7.
+// The code is inelegant. Sorry for that. But it works. Thank to Lord Mokira!;-)
 
 #include <iostream>
 using namespace std;
