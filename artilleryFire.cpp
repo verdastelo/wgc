@@ -5,6 +5,9 @@
 #include <cstdlib>
 #include <cmath>
 #include <ctime>
+
+const double PI = 3.14159;
+
 using namespace std;
 
 void StartUp(void) {
@@ -20,9 +23,9 @@ double angleToDistance (double angle) {
   double range = 0.0;
   double gravity = 9.8; // Acceleration due to gravity
   double time = 0.0;
-  time = ((2 * (initialVelocity * sin (angle))) / gravity);
+  time = ((2 * (initialVelocity * sin (angle * (PI/180)))) / gravity);
   double velocityX = 0.0; // Velocity along the x-axis
-  velocityX = (initialVelocity * cos (angle));
+  velocityX = (initialVelocity * cos (angle * (PI/180)));
   range = velocityX * time;
   return range;
 }
@@ -52,12 +55,14 @@ int Fire(void) {
 int main(void) {
   StartUp(); // Display the introductory script.
   int killed = 0;
+  int shots = 10;
   char c = ' ';
   do {
     killed = Fire(); // Fire() contains the main loop of each round.
     cout << "I see another one, care to shoot again? (Y/N) " << endl;
     cin >> c;
-  } while (c != 'n');
+    shots--;
+  } while ((c != 'n') or (shots == 0));
   cout << "You killed " << killed << " of the enemy." << endl;
   return 0;
 }
