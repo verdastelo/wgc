@@ -11,5 +11,15 @@ int main() {
   cout << "ptr2 == " << ptr2 << endl; // The address of the address of var.
   cout << "&ptr == " << *ptr2 << endl; // The value pointed to by the second address.
   cout << "secondo == " << secondo << endl;
+
+  char *myChar;
+  short *myShort;
+  long *myLong;
+  ++myChar;
+  ++myShort;
+  ++myLong;
+  cout << myChar  << endl;
+  cout << myShort << endl;
+  cout << myLong << endl;
   return 0;
 }
