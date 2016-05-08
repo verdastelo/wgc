@@ -47,7 +47,7 @@ void Time::display() {
 int main() {
   Time timer;
   timer.set(23,59,58);
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 100; i++) {
     timer.decrement();
     timer.display();
     cout << endl;
