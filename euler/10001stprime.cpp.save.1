@@ -1,0 +1,28 @@
+// 10001stprime.cpp: Четан Ананд
+// Описание: What is the 10 001st prime number?
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+bool isPrime (int n) {
+  int sum = 0;
+  for (int i = 1; i <= n; i++) {
+    if ((n%i)==0) sum++;
+  }
+  if (sum == n) {
+    return true;
+  }
+  else return false;
+}
+
+int main() {
+  cout << "This program tells if a number is prime." << endl;
+  cout << "Enter your number: ";
+  int i;
+  while (cin >> i) {
+    if (isPrime (i)) cout << "Yes, it's a prime." << endl;
+    else cout << "No, it isn't a prime." << endl;
+  }
+  return 0;
+}
