@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -18,36 +19,39 @@ int main() {
   string str7 = "0588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450";
   string str = str1 + str2 + str3 + str4 + str5 + str6 + str7;
 
-  vector <int> results (0);
-  vector <int> store (0);
-  // Read the string i = 0
-  int result = 1;
+  vector <unsigned long long int> results (0);
+  vector <unsigned long long int> store (0);
+  vector <string> storeString (0);
+
   int read = 0;
   do {
-    for (int i = read; i < (read + 4); i++) {
+    for (int i = read; i <= (read + 12); i++) {
       store.push_back (str[i]-48);
     }
 
+    unsigned long long int result = 1;
     for (int i = 0; i < store.size(); i++) {
       result *= store[i];
     }
 
+    if (result == 23514624000) {
+      cout << "The sum of these 13 numbers is the largest ";
+      for (int i = 0; i < store.size(); i++) {
+        cout << store[i] << ", ";
+      }
+      cout << '\b' << '\b' << endl;
+    }
+
     results.push_back (result);
-
-    result = 1;
     read++;
+    store.clear();
 
-  } while (read < 995);
+  } while (read < 988);
 
-  for (int i = 0; i < results.size(); i++) {
-    cout << results[i] << ", ";
-  }
-
+  sort (results.begin(), results.end());
+  cout << endl;
+  cout << "The largest number is " << results [results.size() - 1] << endl;
   cout << endl;
 
-  // Count until four.
-  // Multiply the four digits.
-  // Store the result.
-  // Read the string from i = 1.
   return 0;
 }
