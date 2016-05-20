@@ -1,19 +1,19 @@
 #include <iostream>
-#include <vector>
+#include <string>
 using namespace std;
 
 int main() {
-  int sum = 0;
-  int i = 1;
-  vector <int> nums (10);
-  while (nums.size() < 10) {
-    sum += i;
-    nums.push_back (sum);
-    i = sum;
+ cout << "Enter an 8-bit binary number: ";
+  string binary;
+  getline (cin, binary);
+  if (binary[0] == '1') {
+    cout << "The number is negative." << endl;
+    for (int i = 1; i < binary.size(); i++) {
+      if (binary[i] == '1') binary[i] == 0;
+      if (binary[i] == '0') binary[i] == 1;
+    }
+  cout << binary.size() << endl;
   }
-
-  for (int i = 0; i < nums.size(); i++) {
-    cout << "nums[" << i << "] = \t" << nums[i] << endl;
-  }
-  return 0;
+  else cout << "Привет!" << endl;
+ return 0;
 }
