@@ -1,5 +1,5 @@
 // framedGreeting.cpp: Четан Ананд
-// Описание: Ask for a person's name, and generate a framed greeting.
+// Описание: Спрашиваете, как зовут человека и говорите « Привет! » ему.
 
 #include <iostream>
 #include <string>
@@ -11,10 +11,10 @@ int main() {
 
   const std::string greeting = "Привет, " + name + "!";
 
-  const std::string spaces ((greeting.size() + 2)/2, ' ');
+  const std::string spaces (greeting.size(), ' ');
   const std::string second = "* " + spaces + " *";
 
-  const std::string first (second.size()-4, '*');
+  const std::string first (second.size(), '*');
 
   std::cout << std::endl;
   std::cout << first << std::endl;
@@ -23,7 +23,7 @@ int main() {
   std::cout << second << std::endl;
   std::cout << first << std::endl;
 
-  std::cout << "NOTE: " << std::endl;
+  std::cout << "Видите: " << std::endl;
   std::cout << "name.size() = " << name.size() << std::endl;
 
   return 0;
