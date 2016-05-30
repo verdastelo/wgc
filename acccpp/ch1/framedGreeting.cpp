@@ -9,7 +9,7 @@ int main() {
   std::string name;
   std::cin >> name;
 
-  const std::string greeting = "Привет, " + name + "!";
+  const std::string greeting = "Saluton, " + name + "!";
 
   const std::string spaces (greeting.size(), ' ');
   const std::string second = "* " + spaces + " *";
