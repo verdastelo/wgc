@@ -19,7 +19,7 @@ int main() {
   const std::string greeting = "Saluton, " + name + "!";
 
   // The number of blanks surrounding the greeting.
-  const int pad = 1;
+  const int pad = 0;
 
   // Total number of rows and columns to write.
   const int rows = pad * 2 + 3;
