@@ -14,4 +14,8 @@ String methods work on Russian
 Slices a[i:l] (Starting at i but not including l.)
 You can left to the strings from the right-hand side through negative numbers.
 
+Day 1 Part 2
 
+If a and b are lists, b = a doesn't make a copy of a in b. It makes b point to the same list as a.
+Loop over a list.
+List methods: append(), pop(), del(), 
