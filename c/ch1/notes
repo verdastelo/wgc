@@ -1,0 +1,10 @@
+1. Basics: variables, consonants, arithmetic, control flow, functions and the 
+   rudiments of input and output.
+2. A C program consists of functions and variables. Functions contain 
+   statements. Statements specify computing operations. Variables store
+   values used during the computation.
+3. C functions are like subroutines of Fortran and procedures of Pascal.
+4. A function is called by naming it. It is followed by a parenthesised list
+   of arguments. 
+5. New ideas: comments, declarations, arithmetic expressions, loops and forma-
+   tted output. 
