@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 main () {
-  char c;
-  for (c = 0; c <= 128; ++c) printf("%d\n", c) ;
+  int c;
+  for (c = 0; c < 256; ++c) printf("%c, ", c);
+  printf("%d",0xA);
 } 
 
 
