@@ -5,9 +5,9 @@
 
 #include <stdio.h>
 
-#define NALPHABET 26 // the number of alphabet in English
+#define NALPHABET 26 // the number of letters in English
 #define ARTICLE 100  // each asterisk represents 100 occurrences of a letter
-#define BOOK 0x1000    // each asterisk represents 1000 occurrences of a letter
+#define BOOK 0x1000    // each asterisk represents 4096 occurrences of a letter
 
 int main (void) {
   // memory space for two integers is reserved and that space is named.
