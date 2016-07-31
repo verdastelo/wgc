@@ -5,9 +5,9 @@
 
 #include <stdio.h>
 
-#define NALPHABET 26 // number of lowercase alphabet in English
+#define NALPHABET 26 // the number of alphabet in English
 #define ARTICLE 100  // each asterisk represents 100 occurrences of a letter
-#define BOOK 1000    // each asterisk represents 1000 occurrences of a letter
+#define BOOK 0x1000    // each asterisk represents 1000 occurrences of a letter
 
 int main (void) {
   // memory space for two integers is reserved and that space is named.
@@ -28,15 +28,20 @@ int main (void) {
     nalphabet[i] = 0x61+i;
 
   // as long as getchar() is not equal to EOF
-  while ((c = getchar()) != EOF)
+  while ((c = getchar()) != EOF) {
 
-    // check if c is a character in lowercase
+    // check if c is a lowercase character
     if ((c >= 0x61) && (c <= 0x7a))
 
       // every time a character is encountered, its corresponding 
       // element in nchar[] is incremented by 1.
       // a increments the object at index 0, b at index 1 and so on.
       ++nchar[c-'a'];
+    
+    // check if c is an uppercase character 
+    if ((c >= 0x41) && (c <= 0x5a)) 
+      ++nchar[c-'A'];
+  }
   
   printf("%c%4s| %10s| %10s%c", '\n', "char", "frequency", "histogram", '\n');
  
