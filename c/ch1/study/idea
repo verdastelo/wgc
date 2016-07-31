@@ -1,0 +1,4 @@
+1. You need getchar().
+2. You need printf().
+3. You need to know the length of a word.
+4. The value must be stored somewhere.
