@@ -1,4 +1,8 @@
 1. What is the difference between symbolic constants and variables?
 2. How is EOF defined in <stdio.h>?
 3. In C, some assignments are expressions whose value is the value of the variable on the left side.
-4.  
+4. Are functions, procedures and subroutines synonyms?
+5. What is the difference between a parameter and an argument?
+6. What is a function prototype?
+7. Notice how functions are declared in ANSI C and C's earlier versions.
+8.  
