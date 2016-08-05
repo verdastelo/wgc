@@ -5,4 +5,5 @@
 5. What is the difference between a parameter and an argument?
 6. What is a function prototype?
 7. Notice how functions are declared in ANSI C and C's earlier versions.
-8.  
+8. How are call by value and call by reference different?
+9.  
