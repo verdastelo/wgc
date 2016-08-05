@@ -13,25 +13,12 @@ void copy (char to[], char from[]);
 
 int main (void) {
   int len;
-  int thold;                   // threshhold  
   char line [MAXLINE];
   char longer [MAXLINE];
-  int llines[100];	       // llines = lines longer than THRESHHOLD
-
-  for (int i = 0; i < 10; ++i)
-    llines[i] = 0;
-
-  thold = THRESHHOLD;
 
   while ((len = getline(line, MAXLINE)) > 0)
-    for (int i = 0; i < 10; ++i) {
-      if (len > thold) {
-        llines[i] = len;
-      }
-    }
-
-  for (int i = 0; i < 100; ++i)
-    printf("%d%c", llines[i], ' ');
+    if (len > THRESHHOLD) 
+      printf("%s %d %s %d %s %c", "Longer than ", THRESHHOLD, " characters. Length: ", len, "characters", '\n');
   return 0;
 }
 
