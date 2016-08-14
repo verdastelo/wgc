@@ -1,0 +1,29 @@
+Voidrealms
+
+Video 2
+
+1. QString
+2. ProjectName.pro files and how to read them
+
+Video 3
+
+1. MainWindow
+2. One reason Qt is so popular is pointers; they delete themselves. 
+3. Signals and slots 
+4. There are many things to explore in the UI.
+
+Video 4
+
+1. How to delete a signal-slot?
+2. How to code signals and slots?
+   You can use connect. The syntax is: 
+     connect (ui->signalName, SIGNAL(valueChanged()),
+              ui->receiverName, SLOT(setValue()); 
+3. There is also a disconnect function; disconnect()
+  
+Video 5
+
+1. Terms: mainWindow, action, widgets and objects.
+2. Model and model-less dialogues
+3. 
+
