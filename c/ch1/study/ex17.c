@@ -1,46 +1,39 @@
-#include <stdio.h>
+#include<stdio.h>
 
-#define MINLENGTH 81
+#define MAXLINE 1000
+#define MAXLENGTH 81
 
-int readbuff(char *buffer) {
-    size_t i=0;
-    int c;
-    while (i < MINLENGTH) {
-        c = getchar();
-        if (c == EOF) return -1;
-        if (c == '\n') return 0;
-        buffer[i++] = c;
+int getline(char [], int max);
+void copy(char from[], char to[]);
+
+int main()
+{
+  int len = 0; /* current line length */
+  char line[MAXLINE]; /* current input line */
+
+  while((len = getline(line, MAXLINE)) > 0)
+    {
+      if(len > MAXLENGTH)
+	printf("LINE-CONTENTS:  %s\n", line);
     }
-    return 1;
+
+  return 0;
 }
 
-int copyline(char *buffer) {
-    size_t i;
-    int c;
-    int status = 1;
-    for(i=0; i<MINLENGTH; i++)
-        putchar(buffer[i]);
-    while(status == 1) {
-        c = getchar();
-        if (c == EOF)
-            status = -1;
-        else if (c == '\n')
-            status = 0;
-        else
-            putchar(c);
-    }
-    putchar('\n');
-    return status;
-}
 
-int main(void) {
-    char buffer[MINLENGTH];
-    int status = 0;
-    while (status != -1) {
-        status = readbuff(buffer);
-        if (status == 1)
-            status = copyline(buffer);
-    }
-    return 0;
-}
 
+int getline(char line[], int max)
+{
+  int i = 0; 
+  int c = 0; 
+
+  for(i = 0; ((c = getchar()) != EOF) && c != '\n' && i < max - 1; ++i)
+    line[i] = c;
+
+  if(c == '\n')
+    line[i++] = c;
+
+  line[i] = '\0';
+
+  return i;
+}
