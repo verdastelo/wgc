@@ -9,5 +9,8 @@
 using namespace std;
 
 int main() {
-  cout << "\62\
+  cout << "\62\115" << endl;
+  cout << "\62\11\115" << endl;
+  return 0;
+}
  
