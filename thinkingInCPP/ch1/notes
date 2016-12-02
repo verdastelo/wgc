@@ -1,3 +1,6 @@
+2016-12-01
+Revision: 2016-12-02
+
 1. Terms: Solution space and problem space
 2. Alan Kay's summary of five basic characteristics of SmallTalk
 3. Learn about UML (Unified Modeling Language)
@@ -6,4 +9,23 @@
 6. Define three access specifiers: public, private, and protected 
 7. Terms: composition or aggregation
 8. When is the right time to use composition and inheritence?
-9.  
+
+2016-12-02
+
+1. What is the substitution principle? (Is-a vs. is-like-a relationships)
+2. What is early binding?
+3. What is late binding?
+4. A weekly typed language is...
+5. When is a program extensible?
+6. Decoupling the code.
+7. Define upcasting.
+8. What is stack? 
+9. How will you define static?
+10. Why is heap preferred over stack and static? 
+11. Is exception handling an OOP feature? 
+12. Analysis and design
+13. Terms: requirement analysis, system specification, use case, scenario. 
+
+  
+ 
+
