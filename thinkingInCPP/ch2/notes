@@ -1,4 +1,27 @@
-2016-12-06
+2016-12-07
 
-P
-1. 
+1. What is a class? 
+2. Essential tools used to build applications: 
+   a. interpreters
+   b. compilers
+3. Why were BASIC interpreters slow? How Python's interpreters are different?
+4. What is in-memory compilation?
+5. C++ start compilation by running a preprocessor on the source code.
+6. Terms: preprocessor, linker, peephole optimiser, type checking.
+7. Type checking is of two types: (a) Static type checking and (b) Dynamic type checking.
+8. What is a subroutine? 
+9. How are declarations different from definitions?
+10. Do C and C++ view int func1(); differently?
+11. What does a variable declaration tell a compiler?
+12. What is the role of extern in extern int a;? 
+13. In the function declarations, the argument identifiers are optional. 
+    In the definitions, they are required (the identifiers are required
+    only in C, not C++). <--- CONFUSING 
+14. Can you use libraries inherited from C in modern C++?
+15. How C++ namespaces are an advantage of C in the implementation of large programs?
+16. Are character arrays and string separate entities in C++?
+17. Output formatting, character array concatenation. 
+18.    
+
+
+   
