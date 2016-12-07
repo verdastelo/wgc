@@ -1,5 +1,7 @@
 2016-12-07
 
+Morning
+
 1. What is a class? 
 2. Essential tools used to build applications: 
    a. interpreters
@@ -21,7 +23,18 @@
 15. How C++ namespaces are an advantage of C in the implementation of large programs?
 16. Are character arrays and string separate entities in C++?
 17. Output formatting, character array concatenation. 
-18.    
+
+Revision: 2016-12-07 (within 12 hours), 
+
+Evening 
+
+1. Three interesting things you can do with iostream: 
+   a. Character array contenation
+   b. Read input (conversion into oct, hex) 
+   c. Call programs   
+
+//-------------------------------------------------------------------------------
+
+2016-12-08
 
 
-   
