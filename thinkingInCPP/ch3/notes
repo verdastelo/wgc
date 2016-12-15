@@ -1,0 +1,19 @@
+2016-12-15
+
+1. Term: function prototyping
+2. How is declaring function prototypes different from ordinary variable definitions?
+3. Why is int translate (float, float, float); correct but int translate (float, float, float) { x = y + z; return x;} wrong?
+4. It turns out this rule applies only to C. In C++, an argument may be unnamed in the argument list of the function definition.
+    Since it is unnamed, you cannot use it in the function body, of course. Unnamed arguments are allowed to give the programmer
+    a way to “reserve space in the argument list.” Whoever uses the function must still call the function with the proper arguments.
+    However, the person creating the function can then use the argument in the future without forcing modification of code that
+    calls the function. This option of ignoring an argument in the list is also possible if you leave the name in, but you will 
+    get an annoying warning message about the value being unused every time you compile the function. The warning is eliminated
+    if you remove the name. <--- The last sentence isn't applicable in C++11, when compiled in clang++.
+5. How are C and C++ different in the interpretation of func()?
+6. Why is it safer to use func(void)?
+7. What is a variable argument list?
+8. Write a function that takes no arguments and returns no value.
+9. When is function declaration not necessary before int main()?
+10. Did you know procedural languages require all variables to be defined at the beginning of a block?
+11.    
