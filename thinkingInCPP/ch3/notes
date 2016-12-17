@@ -16,4 +16,19 @@
 8. Write a function that takes no arguments and returns no value.
 9. When is function declaration not necessary before int main()?
 10. Did you know procedural languages require all variables to be defined at the beginning of a block?
-11.    
+
+2016-12-16
+
+1. What is word size?
+2. Write down the difference between pass-by-value and pass-by-reference?
+
+2016-12-17
+
+1. What does void* mean?                  
+2. How do C and C++ differ in variable definitions?
+3. Read "Defining variables on the fly" again 
+4. What is the use of extern?
+5. Comments: CO3: Global2.cpp {O}, {L}Global2
+6. Keyword: auto, register, static (vs. global), 
+7. What are the advantages of const PI = 3.14 over #define PI 3.14?
+8.       
