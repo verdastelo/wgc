@@ -1,0 +1,29 @@
+2016-12-22
+
+1. Modern computer architecture is based off of Von Neumann architecture
+2. Von Neumann architecture divides the computer up into two parts: CPU
+   and memory
+3. The CPU reads instructions from memory one at a time and executes them. 
+   This is called fetch-execute cycle.
+4. The elements of the CPU: 
+   a. Program counter
+   b. Instruction decoder
+   c. Data bus
+   d. General-purpose register
+   e. Arithmetic and logic unit
+5. Address
+6. Is there a difference between a value that's an address and a value
+   that's an ASCII code?
+7. How does the CPU recognise instructions and other data?
+8. Two ways to store customer information in memory.
+9. Data accessing methods:
+   a. Immediate mode - data is embedded in the instruction
+   b. Direct addressing mode - contains the address to load the data from
+   c. Index addressing mode - index and multipliers
+   d. Indirect addressing mode - contains a pointer to where the data should
+                                 be loaded from
+   e. Base-pointer offsetting mode 
+
+==================================================================
+
+
