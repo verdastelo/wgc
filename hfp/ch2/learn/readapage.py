@@ -1,6 +1,6 @@
 import urllib.request
 
-page = urllib.request.urlopen("https://rg.ru/2016/12/15/minoborony-boeviki-vybity-iz-vseh-kvartalov-aleppo.html")
-text = page.read().decode("utf")
+вебсайт = urllib.request.urlopen("https://rg.ru/2016/12/15/minoborony-boeviki-vybity-iz-vseh-kvartalov-aleppo.html")
+текст = вебсайт.read().decode("utf")
 
-print (text)
+print (текст)
