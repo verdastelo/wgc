@@ -31,4 +31,9 @@
 5. Comments: CO3: Global2.cpp {O}, {L}Global2
 6. Keyword: auto, register, static (vs. global), 
 7. What are the advantages of const PI = 3.14 over #define PI 3.14?
-8.       
+
+2016-12-19
+
+1. How is a MACRO different from a function?
+2. Read about bitwise operators
+3. 
